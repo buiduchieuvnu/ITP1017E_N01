@@ -14,7 +14,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema app_english
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `app_english` DEFAULT CHARACTER SET latin1 ;
+CREATE SCHEMA IF NOT EXISTS `app_english` DEFAULT CHARACTER SET utf8 ;
 USE `app_english` ;
 
 -- -----------------------------------------------------
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `app_english`.`detail_kiemtra` (
   `ma_detail_ktra` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_detail_ktra`))
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+DEFAULT CHARACTER SET = utf8  COLLATE=utf8_unicode_ci;
 
 
 -- -----------------------------------------------------
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `app_english`.`user` (
   `so_thich` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`id_user`))
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+DEFAULT CHARACTER SET = utf8  COLLATE=utf8_unicode_ci;
 
 
 -- -----------------------------------------------------
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `app_english`.`bai_kiem_tra` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+DEFAULT CHARACTER SET = utf8  COLLATE=utf8_unicode_ci;
 
 
 -- -----------------------------------------------------
@@ -87,7 +87,7 @@ CREATE TABLE IF NOT EXISTS `app_english`.`giao_dien_user` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+DEFAULT CHARACTER SET = utf8  COLLATE=utf8_unicode_ci;
 
 
 -- -----------------------------------------------------
@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `app_english`.`thong_bao` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+DEFAULT CHARACTER SET = utf8  COLLATE=utf8_unicode_ci;
 
 
 -- -----------------------------------------------------
@@ -126,7 +126,7 @@ CREATE TABLE IF NOT EXISTS `app_english`.`truyen_songngu` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+DEFAULT CHARACTER SET = utf8  COLLATE=utf8_unicode_ci;
 
 
 -- -----------------------------------------------------
@@ -175,7 +175,7 @@ CREATE TABLE IF NOT EXISTS `app_english`.`kho_tu_moi` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-DEFAULT CHARACTER SET = latin1;
+DEFAULT CHARACTER SET = utf8  COLLATE=utf8_unicode_ci;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
